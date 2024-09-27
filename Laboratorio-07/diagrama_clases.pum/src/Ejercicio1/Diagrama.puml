@@ -1,0 +1,19 @@
+@startuml
+class Persona{
+    - nombre: String
+    - edad: int 
+    +hablar()
+    +Persona(nombre: String, edad: int)
+    +hablar()
+
+}
+class Estudiante extends Persona{
+    -matricula: string
+    -promedio: double
+    +estudiar()
+}
+class Profesor extends Persona{
+    -especialidad: String
+    +enseñar()
+}
+@enduml

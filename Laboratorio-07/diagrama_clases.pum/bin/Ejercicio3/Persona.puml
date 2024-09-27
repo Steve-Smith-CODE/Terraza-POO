@@ -1,0 +1,19 @@
+@startuml
+
+
+class Persona {
+    +saludar()
+}
+
+class Estudiante {
+    -nombre: String
+     +Estudiante(nombre: String)
+     +saludar()
+     +saludar(otraPersona: String)
+    }
+
+Persona <|-- Estudiante
+
+
+
+@enduml
